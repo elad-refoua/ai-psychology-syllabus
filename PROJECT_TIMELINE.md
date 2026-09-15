@@ -30,7 +30,8 @@ live_signals:
 | Shape | 13 sessions in three parts, every session with a hands-on exercise |
 | Assessment | Product-based, **no exam** (מבוסס־תוצרים · ללא מבחן) |
 | Built with | Quark (Elad's own tooling), 2026-09-15 |
-| Open | Two things, both below: the identity of the Quark artifact against this repository was reported and not independently checked, and two bibliography links are unverifiable by an automated checker because the publishers block bots |
+| Bibliography | 11 items, no placeholders. Session 2's reading was filled on 2026-09-15 (Shanahan 2024) and four Torous papers added; every citation from Crossref, every open-access badge from Unpaywall |
+| Open | One thing: the identity of the Quark artifact against this repository was reported and not independently checked. (Separately, four links are unverifiable by an automated checker because the publishers block bots - they are not broken; see the verification section) |
 
 **The number and the slot agree with the department.** Dubi Moskovitch confirmed on 2026-08-09
 that the course is 60-5009-01, semester B, Mondays 14:00-16:00. The page carries the same course
@@ -128,6 +129,27 @@ link. This file, a lesson in the second brain's own memory, and a vault capture 
 same day, and map item 99 was closed against the evidence above. The failure and what it teaches
 are recorded in
 `C:\Users\user\.claude\agent-memory\second-brain\lesson_2026-09-15_the-syllabus-existed-and-i-said-it-did-not.md`.
+
+**2026-09-15, later still - the bibliography's one placeholder is filled, and four Torous papers
+join it.** Item 07 was not a source: it was a note saying an introductory source on how language
+models work and where their limits are was still missing, with the "Thinking with a Machine"
+glossary standing in for session 2 - the one session whose entire subject is how the thing works.
+It became **Shanahan (2024), Talking about large language models**, *Communications of the ACM*
+67(2), 68-79, open access. Elad then asked for recent work by John Torous, and the honest finding
+was that **Torous does not write about model mechanics** - 63 Crossref records, and his subject is
+clinical evaluation, safety and research priorities. The four added on his instruction are
+Flathers et al. (2026) in *Psychotherapy and Psychosomatics*, a primer for mental health
+professionals on benchmarking; Galatzer-Levy et al. (2026) in *World Psychiatry* 25(2);
+Birk et al. (2026) in *JMIR Mental Health* 13; and Kleinman, Torous & Danilewitz (2026) in
+*Annals of Internal Medicine* 179(4). Every citation was taken from Crossref rather than typed
+from memory, and each item's open-access status was checked against Unpaywall per DOI rather than
+assumed: the first three are open, the *Annals* piece is not and carries a
+`גישה דרך הספרייה` badge instead of a false open-access label. Session 2 gained the paper chip it
+never had. The footer sentence promising that items marked `להשלמה` would be updated before the
+semester was removed, because no item is marked that way any more and it would have sent a reader
+looking for a marker that is not there. Commit `0773478`, pushed; the served page is byte-identical
+to the working copy (`af5a234f...951c0d`), 11 bibliography items, zero pending badges, no console
+errors, no horizontal overflow at phone width.
 
 ---
 
