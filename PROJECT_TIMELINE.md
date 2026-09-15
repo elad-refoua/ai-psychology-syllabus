@@ -3,9 +3,9 @@ portfolio: v1
 project: "ai-psychology-syllabus"
 group: lecture
 source_of_truth: "index.html"
-status: active
-one_line: "The syllabus site for Elad's elective course 605009, 'Using Artificial Intelligence in Psychology: Research and Clinical Applications' (BIU Psychology, semester B of academic year 2026/27, Mondays 14:00-16:00) - one self-contained HTML page, published live on GitHub Pages."
-next_action: "Elad decides whether this page is the version that goes to the department and to students, and whether anything about it is still open; nothing in the repository is waiting on a machine."
+status: distributed
+one_line: "The syllabus for Elad's elective course 605009, 'Using Artificial Intelligence in Psychology: Research and Clinical Applications' (BIU Psychology, semester B of academic year 2026/27, Mondays 14:00-16:00) - one self-contained HTML page on GitHub Pages, and AS OF 2026-09-15 IT HAS GONE OUT TO THE STUDENTS."
+next_action: "Nothing. The document is distributed. Any future edit is an edit to something students have already received - see 'Editing rules now that it is distributed' below."
 waiting_on: []
 deadline: null
 last_updated: 2026-09-15
@@ -150,6 +150,35 @@ semester was removed, because no item is marked that way any more and it would h
 looking for a marker that is not there. Commit `0773478`, pushed; the served page is byte-identical
 to the working copy (`af5a234f...951c0d`), 11 bibliography items, zero pending badges, no console
 errors, no horizontal overflow at phone width.
+
+**2026-09-15 - the syllabus goes out to the students.** Elad: *"הסילבוס עבר לסטודנטים"*. That
+changes what this repository is. Until now it was a page being built; from here it is a document a
+cohort has received, and the project's status field says `distributed` rather than `active`.
+
+---
+
+## Editing rules now that it is distributed
+
+These are consequences of the line above, not preferences.
+
+1. **The URL is the deliverable and must not move.** Students hold
+   `https://elad-refoua.github.io/ai-psychology-syllabus/`. Do not rename the repository, do not
+   change the Pages source, do not move the folder (see the note below about `Desktop\projects\` -
+   that tidying is now off the table), and do not delete `.nojekyll`.
+2. **An edit now is an edit to something people have already read.** Correcting an error is right;
+   silently restructuring sessions, renumbering the bibliography, or changing dates and the meeting
+   slot is not, because a reader who printed the page will not see it and will not know to look.
+   Anything that changes what a student must DO is Elad's call and needs telling them, not just
+   editing.
+3. **Whether they hold the LIVE PAGE or a FROZEN PDF decides everything about point 2.** The page
+   has its own print stylesheet that produces a formal syllabus document, so both are plausible. If
+   they were sent the link, every correction reaches them automatically and today's bibliography
+   completion already has. If they were sent a PDF, they hold a snapshot - and the snapshot may
+   still contain the `להשלמה` placeholder that was only filled at ~15:00 today. **This is recorded
+   as an open question to Elad rather than assumed either way.**
+4. **Session 2's reading changed today.** Item 07 stopped being a placeholder and became Shanahan
+   (2024); four Torous papers were added as 08-11. Anyone reconciling a student's copy against the
+   live page should expect exactly that difference and no other.
 
 ---
 
