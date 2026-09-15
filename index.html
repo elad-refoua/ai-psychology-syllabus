@@ -1,0 +1,1821 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="סילבוס הקורס &quot;שימוש בבינה מלאכותית בפסיכולוגיה: יישומים מחקריים וקליניים&quot; — 13 מפגשים, מסגרות SMART ו-CARE, ביבליוגרפיה מקושרת. מרצה: אלעד רפואה.">
+<meta name="author" content="אלעד רפואה">
+<meta property="og:type" content="website">
+<meta property="og:title" content="שימוש בבינה מלאכותית בפסיכולוגיה — סילבוס">
+<meta property="og:description" content="יישומים מחקריים וקליניים · 13 מפגשים · סמסטר ב׳ תשפ״ז">
+<meta property="og:locale" content="he_IL">
+<meta name="theme-color" content="#E8ECEA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1312" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%274%27 fill=%27%230E4F5A%27/%3E%3Crect x=%276%27 y=%276%27 width=%274%27 height=%2720%27 fill=%27%23B7D2D6%27/%3E%3Crect x=%2712%27 y=%2711%27 width=%274%27 height=%2715%27 fill=%27%235CA1AC%27/%3E%3Crect x=%2718%27 y=%278%27 width=%274%27 height=%2718%27 fill=%27%238ABAC2%27/%3E%3Crect x=%2724%27 y=%2714%27 width=%272%27 height=%2712%27 fill=%27%23FBFCFB%27/%3E%3C/svg%3E">
+<style>
+/* skeleton reset — mirrors the Artifact publish wrapper */
+:root{
+  color-scheme: light;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ color-scheme: dark; } }
+:root[data-theme="dark"]{ color-scheme: dark; }
+body{ margin:0; font-size:14px; font-family: system-ui, -apple-system, sans-serif; background:#FBFAF7; }
+img{ max-width:100%; }
+[hidden]{ display:none !important; }
+</style>
+<title>בינה מלאכותית בפסיכולוגיה</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;800&family=Assistant:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+/* ============================================================
+   TOKENS — light is the base; dark redefines tokens only.
+   ============================================================ */
+:root{
+  direction:rtl;
+
+  --paper:#E8ECEA;
+  --surface:#FBFCFB;
+  --surface-2:#F1F5F3;
+  --surface-3:#E4EAE8;
+
+  --ink:#111A19;
+  --ink-2:#4E5A58;
+  --ink-3:#7A8684;
+
+  --rule:#C9D2CF;
+  --rule-2:#DEE5E3;
+
+  --accent:#0E4F5A;
+  --accent-2:#15707F;
+  --accent-soft:#D6E5E7;
+  --accent-line:#9CC2C8;
+
+  --flag:#8F5326;
+  --flag-2:#A9622D;
+  --flag-soft:#F1E3D6;
+  --flag-line:#D9B995;
+
+  /* graduated ramp — five steps, used for the SMART levels */
+  --t1:#B7D2D6;
+  --t2:#8ABAC2;
+  --t3:#5CA1AC;
+  --t4:#2F7D8A;
+  --t5:#0E4F5A;
+
+  --shadow:0 1px 2px rgba(17,26,25,.05), 0 8px 24px -14px rgba(17,26,25,.22);
+  --shadow-2:0 1px 2px rgba(17,26,25,.06), 0 14px 32px -16px rgba(17,26,25,.28);
+
+  --ff-display:"Frank Ruhl Libre", "Noto Serif Hebrew", "David Libre", Georgia, serif;
+  --ff-body:"Assistant", "Heebo", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --ff-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --measure:36rem;
+  --wrap:70rem;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0B1312;
+    --surface:#121D1B;
+    --surface-2:#18241F;
+    --surface-3:#1D2A28;
+
+    --ink:#E2EAE7;
+    --ink-2:#9AA7A4;
+    --ink-3:#74807E;
+
+    --rule:#27332F;
+    --rule-2:#1C2826;
+
+    --accent:#5CBACB;
+    --accent-2:#8AD6E3;
+    --accent-soft:#12343B;
+    --accent-line:#2B5B63;
+
+    --flag:#D89A66;
+    --flag-2:#E6AE7D;
+    --flag-soft:#30220F;
+    --flag-line:#5A4227;
+
+    --t1:#1F3C42;
+    --t2:#2B5A63;
+    --t3:#377C88;
+    --t4:#489CAB;
+    --t5:#5CBACB;
+
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.7);
+    --shadow-2:0 1px 2px rgba(0,0,0,.5), 0 14px 32px -16px rgba(0,0,0,.8);
+  }
+}
+
+:root[data-theme="dark"]{
+  --paper:#0B1312;
+  --surface:#121D1B;
+  --surface-2:#18241F;
+  --surface-3:#1D2A28;
+
+  --ink:#E2EAE7;
+  --ink-2:#9AA7A4;
+  --ink-3:#74807E;
+
+  --rule:#27332F;
+  --rule-2:#1C2826;
+
+  --accent:#5CBACB;
+  --accent-2:#8AD6E3;
+  --accent-soft:#12343B;
+  --accent-line:#2B5B63;
+
+  --flag:#D89A66;
+  --flag-2:#E6AE7D;
+  --flag-soft:#30220F;
+  --flag-line:#5A4227;
+
+  --t1:#1F3C42;
+  --t2:#2B5A63;
+  --t3:#377C88;
+  --t4:#489CAB;
+  --t5:#5CBACB;
+
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -14px rgba(0,0,0,.7);
+  --shadow-2:0 1px 2px rgba(0,0,0,.5), 0 14px 32px -16px rgba(0,0,0,.8);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--ff-body);
+  font-size:1.0625rem;
+  line-height:1.65;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img{max-width:100%;}
+[hidden]{display:none !important;}
+
+a{color:var(--accent); text-decoration-color:var(--accent-line); text-underline-offset:.22em; text-decoration-thickness:.06em;}
+a:hover{color:var(--accent-2); text-decoration-color:currentColor;}
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--accent-2);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+h1,h2,h3,h4{font-family:var(--ff-display); font-weight:700; line-height:1.18; text-wrap:balance; margin:0;}
+p{margin:0;}
+ul,ol{margin:0; padding:0; list-style:none;}
+
+.ltr{direction:ltr; unicode-bidi:isolate; text-align:left;}
+.num{font-variant-numeric:tabular-nums;}
+
+.wrap{
+  width:100%;
+  max-width:var(--wrap);
+  margin-inline:auto;
+  padding-inline:1.25rem;
+}
+.measure{max-width:var(--measure);}
+
+.eyebrow{
+  font-family:var(--ff-mono);
+  font-size:.6875rem;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin:0;
+}
+
+/* ============================================================
+   TOP BAR
+   ============================================================ */
+.topbar{
+  position:sticky;
+  top:env(safe-area-inset-top, 0px);
+  z-index:40;
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-block-end:1px solid var(--rule);
+}
+.topbar-in{
+  display:flex;
+  align-items:center;
+  gap:1.25rem;
+  min-height:3.25rem;
+  padding-block:.4rem;
+}
+.topbar-mark{
+  font-family:var(--ff-display);
+  font-weight:700;
+  font-size:.95rem;
+  letter-spacing:-.01em;
+  white-space:nowrap;
+  color:var(--ink);
+}
+.topbar-mark span{color:var(--accent);}
+
+.jump{
+  display:flex;
+  gap:.15rem;
+  overflow-x:auto;
+  scrollbar-width:none;
+  flex:1 1 auto;
+}
+.jump::-webkit-scrollbar{display:none;}
+.jump a{
+  flex:0 0 auto;
+  font-size:.8125rem;
+  font-weight:600;
+  color:var(--ink-2);
+  text-decoration:none;
+  padding:.35rem .6rem;
+  border-radius:3px;
+  white-space:nowrap;
+  transition:color .16s, background-color .16s;
+}
+.jump a:hover{color:var(--ink); background:var(--surface-3);}
+.jump a.is-active{color:var(--accent); background:var(--accent-soft);}
+
+.btn-print{
+  flex:0 0 auto;
+  font-family:var(--ff-body);
+  font-size:.8125rem;
+  font-weight:600;
+  color:var(--ink-2);
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:.4rem .75rem;
+  cursor:pointer;
+  transition:border-color .16s, color .16s;
+}
+.btn-print:hover{color:var(--accent); border-color:var(--accent-line);}
+
+/* ============================================================
+   MASTHEAD
+   ============================================================ */
+.masthead{
+  padding-block:3.5rem 2.5rem;
+  border-block-end:1px solid var(--rule);
+}
+.mast-eyebrow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.5rem .85rem;
+  margin-block-end:1.5rem;
+}
+.mast-eyebrow .dot{width:3px; height:3px; background:var(--ink-3); border-radius:50%;}
+
+h1.mast-title{
+  font-size:clamp(2.1rem, 5.2vw, 3.35rem);
+  font-weight:800;
+  letter-spacing:-.018em;
+  max-width:19ch;
+  margin-block-end:.35rem;
+}
+.mast-sub{
+  font-family:var(--ff-display);
+  font-size:clamp(1.15rem, 2.6vw, 1.55rem);
+  font-weight:400;
+  color:var(--accent);
+  letter-spacing:-.01em;
+  max-width:24ch;
+}
+.mast-en{
+  font-family:var(--ff-mono);
+  font-size:.78rem;
+  font-weight:400;
+  line-height:1.55;
+  color:var(--ink-3);
+  max-width:46ch;
+  margin-block-start:1.1rem;
+  padding-inline-start:.9rem;
+  border-inline-start:2px solid var(--rule);
+}
+
+.mast-lede{
+  font-family:var(--ff-display);
+  font-size:clamp(1.05rem, 2.1vw, 1.28rem);
+  font-weight:400;
+  line-height:1.62;
+  color:var(--ink);
+  max-width:40rem;
+  margin-block-start:2.25rem;
+}
+
+/* metadata grid — the syllabus header convention */
+.meta{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:0;
+  margin-block-start:2.5rem;
+  border-block-start:1px solid var(--rule);
+}
+@media (min-width: 34rem){ .meta{grid-template-columns:repeat(2, 1fr);} }
+@media (min-width: 56rem){ .meta{grid-template-columns:repeat(4, 1fr);} }
+.meta div{
+  padding-block:.85rem;
+  padding-inline-end:1.25rem;
+  border-block-end:1px solid var(--rule-2);
+}
+.meta dt{
+  font-family:var(--ff-mono);
+  font-size:.66rem;
+  font-weight:500;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin-block-end:.3rem;
+}
+.meta dd{
+  margin:0;
+  font-size:.9375rem;
+  font-weight:600;
+  line-height:1.4;
+  color:var(--ink);
+}
+.pending{
+  display:inline-block;
+  font-family:var(--ff-mono);
+  font-size:.7rem;
+  font-weight:500;
+  color:var(--flag);
+  background:var(--flag-soft);
+  border:1px dashed var(--flag-line);
+  border-radius:2px;
+  padding:.1rem .4rem;
+  vertical-align:.05em;
+}
+
+/* ============================================================
+   SECTION SHELL
+   ============================================================ */
+section{scroll-margin-top:5rem;}
+
+.sec{padding-block:3.25rem;}
+.sec + .sec{border-block-start:1px solid var(--rule);}
+
+.sec-head{margin-block-end:2rem;}
+.sec-head h2{
+  font-size:clamp(1.4rem, 3vw, 1.85rem);
+  font-weight:700;
+  letter-spacing:-.015em;
+  margin-block-start:.5rem;
+}
+.sec-head p{
+  color:var(--ink-2);
+  font-size:.975rem;
+  max-width:var(--measure);
+  margin-block-start:.6rem;
+}
+
+.prose p + p{margin-block-start:1rem;}
+.prose{color:var(--ink-2); font-size:1.0625rem;}
+.prose strong{color:var(--ink); font-weight:700;}
+
+/* ============================================================
+   COURSE MAP — the 13-session arc
+   ============================================================ */
+.map{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1.75rem 2.25rem;
+  margin-block-start:.5rem;
+}
+.map-group{flex:1 1 auto; min-width:min(100%, 12rem);}
+.map-group.is-finale{flex:0 0 auto; min-width:0;}
+
+.map-label{
+  font-family:var(--ff-mono);
+  font-size:.66rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  color:var(--ink-3);
+  margin-block-end:.55rem;
+  display:block;
+}
+.map-name{
+  display:block;
+  font-family:var(--ff-body);
+  font-size:.8125rem;
+  font-weight:600;
+  letter-spacing:0;
+  text-transform:none;
+  color:var(--ink-2);
+  margin-block-start:.5rem;
+}
+.map-ticks{display:flex; gap:.3rem;}
+.tick{
+  flex:1 1 auto;
+  min-width:2.35rem;
+  height:2.6rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--ff-mono);
+  font-size:.8rem;
+  font-weight:500;
+  font-variant-numeric:tabular-nums;
+  text-decoration:none;
+  color:var(--ink);
+  background:var(--tone, var(--t3));
+  border-radius:2px;
+  transition:transform .16s ease, box-shadow .16s ease;
+}
+.tick:hover{transform:translateY(-2px); box-shadow:var(--shadow); color:var(--ink);}
+.map-group.g-a .tick{background:var(--t1);}
+.map-group.g-b .tick{background:var(--t3); color:#F4FAFB;}
+.map-group.g-c .tick{background:var(--t5); color:#F4FAFB;}
+.map-group.g-d .tick{
+  background:transparent;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  min-width:3.25rem;
+}
+:root[data-theme="dark"] .map-group.g-a .tick,
+:root[data-theme="dark"] .map-group.g-b .tick,
+:root[data-theme="dark"] .map-group.g-c .tick{color:#EAF4F5;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .map-group.g-a .tick,
+  :root:not([data-theme="light"]) .map-group.g-b .tick,
+  :root:not([data-theme="light"]) .map-group.g-c .tick{color:#EAF4F5;}
+}
+
+/* ============================================================
+   OUTCOMES
+   ============================================================ */
+.outcomes{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(16rem, 1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  overflow:hidden;
+}
+.outcome{
+  background:var(--surface);
+  padding:1.5rem 1.35rem;
+}
+.outcome h3{
+  font-size:1.05rem;
+  font-weight:700;
+  margin-block-end:.9rem;
+  display:flex;
+  align-items:baseline;
+  gap:.5rem;
+}
+.outcome h3 i{
+  font-family:var(--ff-mono);
+  font-style:normal;
+  font-size:.7rem;
+  font-weight:500;
+  color:var(--accent);
+  letter-spacing:.08em;
+}
+.outcome li{
+  position:relative;
+  font-size:.9375rem;
+  line-height:1.6;
+  color:var(--ink-2);
+  padding-inline-start:.95rem;
+}
+.outcome li + li{margin-block-start:.75rem; padding-block-start:.75rem; border-block-start:1px solid var(--rule-2);}
+.outcome li::before{
+  content:"";
+  position:absolute;
+  inset-inline-start:0;
+  top:.62em;
+  width:4px; height:4px;
+  background:var(--accent-line);
+  border-radius:50%;
+}
+
+/* ============================================================
+   FRAMEWORKS
+   ============================================================ */
+.frames{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(17rem, 1fr));
+  gap:1.25rem;
+}
+.frame{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:1.4rem 1.3rem 1.3rem;
+  display:flex;
+  flex-direction:column;
+  gap:.9rem;
+}
+.frame-top{display:flex; align-items:baseline; justify-content:space-between; gap:1rem;}
+.frame h3{font-size:1.1rem; font-weight:700;}
+.frame-tag{
+  font-family:var(--ff-mono);
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  color:var(--ink-3);
+  white-space:nowrap;
+}
+.frame-note{font-size:.875rem; line-height:1.55; color:var(--ink-2);}
+
+/* SMART ladder — five graduated levels */
+.ladder{display:flex; flex-direction:column; gap:2px;}
+.rung{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.4rem .6rem;
+  border-radius:2px;
+  background:var(--rung, var(--t1));
+}
+.rung b{
+  font-family:var(--ff-mono);
+  font-size:.82rem;
+  font-weight:600;
+  width:1.1rem;
+  text-align:center;
+  color:var(--rung-ink, var(--ink));
+}
+.rung span{
+  font-family:var(--ff-mono);
+  font-size:.76rem;
+  letter-spacing:.02em;
+  direction:ltr;
+  unicode-bidi:isolate;
+  color:var(--rung-ink, var(--ink));
+}
+.r1{--rung:var(--t1);}
+.r2{--rung:var(--t2);}
+.r3{--rung:var(--t3); --rung-ink:#F2FAFB;}
+.r4{--rung:var(--t4); --rung-ink:#F2FAFB;}
+.r5{--rung:var(--t5); --rung-ink:#F2FAFB;}
+:root[data-theme="dark"] .r1,:root[data-theme="dark"] .r2{--rung-ink:#E2EAE7;}
+:root[data-theme="dark"] .r3,:root[data-theme="dark"] .r4,:root[data-theme="dark"] .r5{--rung-ink:#07100F;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .r1,:root:not([data-theme="light"]) .r2{--rung-ink:#E2EAE7;}
+  :root:not([data-theme="light"]) .r3,:root:not([data-theme="light"]) .r4,:root:not([data-theme="light"]) .r5{--rung-ink:#07100F;}
+}
+
+/* CARE quartet */
+.quartet{display:grid; grid-template-columns:repeat(2, 1fr); gap:2px;}
+.quad{
+  background:var(--surface-2);
+  border-radius:2px;
+  padding:.55rem .65rem;
+  display:flex;
+  align-items:baseline;
+  gap:.5rem;
+}
+.quad b{font-family:var(--ff-mono); font-size:.82rem; font-weight:600; color:var(--accent);}
+.quad span{font-family:var(--ff-mono); font-size:.72rem; direction:ltr; unicode-bidi:isolate; color:var(--ink-2);}
+
+/* triad — context / constraints / goal */
+.triad{display:flex; flex-wrap:wrap; gap:.4rem;}
+.triad em{
+  font-style:normal;
+  font-family:var(--ff-body);
+  font-size:.875rem;
+  font-weight:600;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border-radius:2px;
+  padding:.3rem .6rem;
+}
+
+/* ============================================================
+   SESSIONS
+   ============================================================ */
+.part{margin-block-start:2.75rem;}
+.part:first-of-type{margin-block-start:0;}
+
+.part-head{
+  display:flex;
+  align-items:baseline;
+  gap:.85rem;
+  padding-block-end:.7rem;
+  border-block-end:2px solid var(--pt, var(--accent));
+  margin-block-end:.25rem;
+}
+.part-head h3{
+  font-size:1.2rem;
+  font-weight:700;
+  letter-spacing:-.01em;
+}
+.part-head .range{
+  font-family:var(--ff-mono);
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  color:var(--ink-3);
+  margin-inline-start:auto;
+  white-space:nowrap;
+}
+.p-a{--pt:var(--t2);}
+.p-b{--pt:var(--t4);}
+.p-c{--pt:var(--t5);}
+.p-d{--pt:var(--accent-line);}
+
+.session{
+  display:grid;
+  grid-template-columns:3.5rem 1fr;
+  gap:0 1.15rem;
+  padding-block:1.4rem;
+  border-block-end:1px solid var(--rule-2);
+}
+.session:last-child{border-block-end:0;}
+
+.s-num{
+  font-family:var(--ff-mono);
+  font-size:.95rem;
+  font-weight:500;
+  font-variant-numeric:tabular-nums;
+  color:var(--pt, var(--accent));
+  line-height:1.5;
+  padding-block-start:.1rem;
+}
+.s-num::after{
+  content:"";
+  display:block;
+  width:1.6rem;
+  height:2px;
+  background:var(--pt, var(--accent));
+  margin-block-start:.45rem;
+  opacity:.5;
+}
+
+.s-body{min-width:0;}
+.s-title{
+  font-family:var(--ff-display);
+  font-size:1.12rem;
+  font-weight:700;
+  line-height:1.35;
+  letter-spacing:-.008em;
+  margin-block-end:.4rem;
+}
+.s-desc{
+  font-size:.9375rem;
+  line-height:1.62;
+  color:var(--ink-2);
+}
+
+.s-do{
+  display:flex;
+  gap:.6rem;
+  margin-block-start:.85rem;
+  padding:.65rem .8rem;
+  background:var(--surface-2);
+  border-inline-start:2px solid var(--accent-line);
+  border-radius:0 2px 2px 0;
+}
+.s-do dt{
+  font-family:var(--ff-mono);
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  white-space:nowrap;
+  padding-block-start:.22em;
+  flex:0 0 auto;
+}
+.s-do dd{margin:0; font-size:.9rem; line-height:1.55; color:var(--ink); font-weight:600;}
+
+.chips{display:flex; flex-wrap:wrap; gap:.4rem; margin-block-start:.85rem;}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:.38rem;
+  font-size:.8125rem;
+  font-weight:600;
+  line-height:1.3;
+  text-decoration:none;
+  color:var(--ink-2);
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:2px;
+  padding:.32rem .6rem;
+  transition:border-color .16s, color .16s, background-color .16s;
+}
+.chip::before{
+  content:"";
+  width:5px; height:5px;
+  border-radius:1px;
+  background:var(--accent-line);
+  flex:0 0 auto;
+}
+.chip:hover{color:var(--accent); border-color:var(--accent-line); background:var(--accent-soft);}
+.chip:hover::before{background:var(--accent);}
+.chip.is-paper::before{border-radius:50%; background:var(--accent);}
+.chip.is-video::before{
+  width:0; height:0;
+  border-radius:0;
+  background:transparent;
+  border-block:3.5px solid transparent;
+  border-inline-end:5px solid var(--accent);
+}
+
+.flagline{
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  font-family:var(--ff-mono);
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--flag);
+  margin-block-end:.45rem;
+}
+.flagline::before{
+  content:"";
+  width:6px; height:6px;
+  background:var(--flag);
+  transform:rotate(45deg);
+  flex:0 0 auto;
+}
+
+/* ============================================================
+   ASSESSMENT
+   ============================================================ */
+.grade-bar{
+  display:flex;
+  height:2.75rem;
+  border-radius:3px;
+  overflow:hidden;
+  border:1px solid var(--rule);
+  margin-block-end:1.5rem;
+}
+.grade-seg{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--ff-mono);
+  font-size:.85rem;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+}
+.seg-30{flex:0 0 30%; background:var(--t2); color:var(--ink);}
+.seg-70{flex:0 0 70%; background:var(--t5); color:#F2FAFB;}
+:root[data-theme="dark"] .seg-30,:root[data-theme="dark"] .seg-70{color:#07100F;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .seg-30,
+  :root:not([data-theme="light"]) .seg-70{color:#07100F;}
+}
+
+.tasks{display:grid; grid-template-columns:repeat(auto-fit, minmax(18rem, 1fr)); gap:1.25rem;}
+.task{
+  background:var(--surface);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  padding:1.35rem 1.25rem;
+}
+.task-pct{
+  font-family:var(--ff-mono);
+  font-size:1.5rem;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+  color:var(--accent);
+  line-height:1;
+  display:block;
+  margin-block-end:.55rem;
+}
+.task h3{font-size:1.05rem; font-weight:700; margin-block-end:.55rem;}
+.task p{font-size:.9125rem; line-height:1.6; color:var(--ink-2);}
+
+.notes{margin-block-start:1.5rem; display:flex; flex-direction:column; gap:.7rem;}
+.note{
+  display:flex;
+  gap:.7rem;
+  font-size:.9125rem;
+  line-height:1.55;
+  color:var(--ink-2);
+}
+.note::before{
+  content:"";
+  flex:0 0 auto;
+  width:3px;
+  background:var(--rule);
+  border-radius:2px;
+}
+.note.is-flag::before{background:var(--flag);}
+.note.is-flag{color:var(--ink);}
+
+/* ============================================================
+   REQUIREMENTS
+   ============================================================ */
+.reqs{display:grid; grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:3px; overflow:hidden;}
+.req{background:var(--surface); padding:1.3rem 1.2rem;}
+.req i{
+  display:block;
+  font-family:var(--ff-mono);
+  font-style:normal;
+  font-size:.64rem;
+  font-weight:500;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin-block-end:.5rem;
+}
+.req p{font-size:.9125rem; line-height:1.58; color:var(--ink-2);}
+.req p strong{color:var(--ink);}
+
+/* ============================================================
+   BIBLIOGRAPHY
+   ============================================================ */
+.refs{display:flex; flex-direction:column;}
+.ref{
+  display:grid;
+  grid-template-columns:2rem 1fr;
+  gap:0 1rem;
+  padding-block:1.15rem;
+  border-block-end:1px solid var(--rule-2);
+}
+.ref:last-child{border-block-end:0;}
+.ref-n{
+  font-family:var(--ff-mono);
+  font-size:.78rem;
+  font-weight:500;
+  font-variant-numeric:tabular-nums;
+  color:var(--ink-3);
+  padding-block-start:.25rem;
+}
+.ref-cite{
+  font-size:.925rem;
+  line-height:1.6;
+  color:var(--ink);
+}
+.ref-cite i{font-style:italic; color:var(--ink-2);}
+.ref-cite a{font-weight:600;}
+.ref-foot{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.45rem .7rem;
+  margin-block-start:.5rem;
+}
+.doi{
+  font-family:var(--ff-mono);
+  font-size:.74rem;
+  direction:ltr;
+  unicode-bidi:isolate;
+  text-decoration:none;
+  color:var(--ink-2);
+  border-block-end:1px solid var(--rule);
+  padding-block-end:1px;
+}
+.doi:hover{color:var(--accent); border-color:var(--accent);}
+.oa{
+  font-family:var(--ff-mono);
+  font-size:.62rem;
+  font-weight:500;
+  letter-spacing:.08em;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border-radius:2px;
+  padding:.14rem .42rem;
+  white-space:nowrap;
+}
+.oa.is-pending{color:var(--flag); background:var(--flag-soft);}
+.ref-use{
+  font-family:var(--ff-mono);
+  font-size:.66rem;
+  letter-spacing:.06em;
+  color:var(--ink-3);
+}
+
+/* ============================================================
+   RESOURCES
+   ============================================================ */
+.res-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(17rem, 1fr)); gap:1.75rem 2rem; align-items:start;}
+.res h3{
+  font-size:1rem;
+  font-weight:700;
+  padding-block-end:.55rem;
+  border-block-end:1px solid var(--rule);
+  margin-block-end:.9rem;
+}
+.res h3 small{
+  display:block;
+  font-family:var(--ff-mono);
+  font-size:.64rem;
+  font-weight:400;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  color:var(--ink-3);
+  margin-block-end:.3rem;
+}
+.res li + li{margin-block-start:.5rem;}
+.res a{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:.75rem;
+  font-size:.9rem;
+  font-weight:600;
+  text-decoration:none;
+  color:var(--ink);
+  padding-block:.2rem;
+  border-block-end:1px solid transparent;
+  transition:color .16s, border-color .16s;
+}
+.res a:hover{color:var(--accent); border-block-end-color:var(--accent-line);}
+.res a small{
+  font-family:var(--ff-mono);
+  font-size:.66rem;
+  font-weight:400;
+  color:var(--ink-3);
+  white-space:nowrap;
+  flex:0 0 auto;
+}
+.res a:hover small{color:var(--accent-2);}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{
+  border-block-start:1px solid var(--rule);
+  padding-block:2.25rem 3.5rem;
+  margin-block-start:1rem;
+}
+.foot-in{display:flex; flex-wrap:wrap; gap:1rem 2rem; align-items:baseline; justify-content:space-between;}
+.foot p{font-size:.85rem; color:var(--ink-3); line-height:1.6; max-width:42ch;}
+.foot .sig{font-family:var(--ff-display); font-size:.95rem; font-weight:700; color:var(--ink-2);}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 640px){
+  body{font-size:1rem;}
+  .session{grid-template-columns:1fr; gap:.55rem;}
+  .s-num{display:flex; align-items:center; gap:.6rem; padding-block-start:0;}
+  .s-num::after{margin-block-start:0; width:1.2rem;}
+  .quartet{grid-template-columns:1fr;}
+  .masthead{padding-block:2.5rem 2rem;}
+  .topbar-mark{display:none;}
+  .map-ticks{flex-wrap:wrap;}
+  .tick{min-width:2.6rem; flex:0 0 auto;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+}
+
+/* ============================================================
+   PRINT — the formal document
+   ============================================================ */
+@media print{
+  @page{margin:17mm 15mm 16mm;}
+
+  :root{
+    --paper:#fff; --surface:#fff; --surface-2:#fff; --surface-3:#fff;
+    --ink:#000; --ink-2:#333; --ink-3:#666;
+    --rule:#bbb; --rule-2:#ddd;
+    --accent:#000; --accent-2:#000; --accent-soft:#fff; --accent-line:#999;
+    --flag:#000; --flag-soft:#fff; --flag-line:#999;
+    --shadow:none; --shadow-2:none;
+  }
+  body{background:#fff; color:#000; font-size:10pt; line-height:1.45;}
+  .topbar, .btn-print, .no-print{display:none !important;}
+  .wrap{max-width:none; padding-inline:0;}
+  a{color:#000; text-decoration:none;}
+
+  .masthead{padding-block:0 1rem;}
+  h1.mast-title{font-size:19pt;}
+  .mast-sub{font-size:12pt;}
+  .mast-lede{font-size:10.5pt; margin-block-start:1rem;}
+  .mast-en{font-size:8pt;}
+
+  .sec{padding-block:1.1rem; break-inside:auto;}
+  .sec-head h2{font-size:13pt;}
+  .sec-head{margin-block-end:.8rem;}
+
+  .part{break-inside:avoid; margin-block-start:1.2rem;}
+  .session{break-inside:avoid; padding-block:.65rem;}
+  .s-title{font-size:10.5pt;}
+  .s-desc, .s-do dd{font-size:9.5pt;}
+  .s-do{background:#fff; border-inline-start:1.5pt solid #999; padding:.3rem .5rem;}
+
+  .outcomes, .frames, .reqs, .tasks{break-inside:avoid;}
+  .outcome, .req, .task, .frame{border-color:#bbb;}
+
+  .chips{gap:.25rem;}
+  .chip{border-color:#ccc; font-size:8pt; padding:.15rem .35rem;}
+  .chip::before{display:none;}
+
+  .grade-bar{height:1.5rem; border-color:#999;}
+  .seg-30{background:#e8e8e8 !important; color:#000 !important;}
+  .seg-70{background:#c0c0c0 !important; color:#000 !important;}
+
+  .tick{border:1px solid #999 !important; background:#fff !important; color:#000 !important; height:1.9rem; font-size:8pt;}
+  .map-group.g-a .tick,.map-group.g-b .tick,.map-group.g-c .tick{background:#fff !important; color:#000 !important;}
+
+  .rung{border:.5pt solid #bbb;}
+  .r1,.r2,.r3,.r4,.r5{--rung:#fff !important; --rung-ink:#000 !important;}
+  .rung b, .rung span{color:#000 !important;}
+  .quad{border:.5pt solid #ddd;}
+  .triad em{background:#fff; border:.5pt solid #bbb; color:#000;}
+
+  /* formal document convention: print the URL after every reference link */
+  .ref-cite a[href]::after{
+    content:" — " attr(href);
+    font-family:var(--ff-mono);
+    font-size:7.5pt;
+    font-weight:400;
+    color:#444;
+    word-break:break-all;
+  }
+  .ref{break-inside:avoid;}
+  .doi{border:0;}
+  .res a small{color:#666;}
+  .res a[href]::after{
+    content:"";
+  }
+  .res li::after{
+    content:attr(data-url);
+    display:block;
+    font-family:var(--ff-mono);
+    font-size:7.5pt;
+    color:#555;
+    word-break:break-all;
+    margin-block-start:.05rem;
+  }
+
+  .foot{padding-block:1rem 0;}
+}
+</style>
+</head>
+<body>
+<div lang="he" dir="rtl">
+
+  <!-- ==================== TOP BAR ==================== -->
+  <nav class="topbar no-print" aria-label="ניווט בסילבוס">
+    <div class="wrap topbar-in">
+      <span class="topbar-mark">בינה מלאכותית <span>בפסיכולוגיה</span></span>
+      <div class="jump" id="jump">
+        <a href="#about">תקציר</a>
+        <a href="#outcomes">מטרות למידה</a>
+        <a href="#frameworks">מסגרות</a>
+        <a href="#schedule">מהלך הקורס</a>
+        <a href="#grading">הערכה</a>
+        <a href="#requirements">דרישות</a>
+        <a href="#bibliography">ביבליוגרפיה</a>
+        <a href="#resources">משאבים</a>
+      </div>
+      <button class="btn-print" id="printBtn" type="button">הדפסה / PDF</button>
+    </div>
+  </nav>
+
+  <!-- ==================== MASTHEAD ==================== -->
+  <header class="masthead">
+    <div class="wrap">
+      <div class="mast-eyebrow">
+        <p class="eyebrow">סילבוס — תוכנית הוראה</p>
+        <span class="dot" aria-hidden="true"></span>
+        <p class="eyebrow">המחלקה לפסיכולוגיה</p>
+        <span class="dot" aria-hidden="true"></span>
+        <p class="eyebrow num">סמסטר ב׳ · תשפ״ז</p>
+      </div>
+
+      <h1 class="mast-title">שימוש בבינה מלאכותית בפסיכולוגיה</h1>
+      <p class="mast-sub">יישומים מחקריים וקליניים</p>
+      <p class="mast-en ltr">Using Artificial Intelligence in Psychology:<br>Research and Clinical Applications</p>
+
+      <p class="mast-lede">
+        הבינה המלאכותית — ובמיוחד בינה יוצרת — חודרת במהירות לעבודת הפסיכולוג/ית, הן במחקר והן בקליניקה.
+        הקורס מציע היכרות מבוססת־ראיות, ביקורתית ומעשית עם השימושים המרכזיים, ומטרת־העל שלו אחת:
+        בוגרים שיודעים להשתמש ב־AI בידע, בביקורתיות ובאחריות.
+      </p>
+
+      <dl class="meta">
+        <div><dt>מס׳ הקורס</dt><dd><span class="pending">ימולא ע״י המחלקה</span></dd></div>
+        <div><dt>מרצה</dt><dd>אלעד רפואה</dd></div>
+        <div><dt>היקף</dt><dd>2 נ״ז <span class="pending">לאימות</span></dd></div>
+        <div><dt>שפת הוראה</dt><dd>עברית</dd></div>
+        <div><dt>קהל יעד</dt><dd>תואר ראשון ושני · קורס בחירה</dd></div>
+        <div><dt>דרישות קדם</dt><dd>ללא</dd></div>
+        <div><dt>מבנה</dt><dd>13 מפגשים · שלושה חלקים</dd></div>
+        <div><dt>אופי הקורס</dt><dd>חוויתי־יישומי · מבוסס־תוצרים</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="sec" id="about">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">01 — תקציר</p>
+          <h2>על מה הקורס</h2>
+        </div>
+        <div class="prose measure">
+          <p>
+            הקורס סוקר את השימושים המרכזיים בבינה מלאכותית בעבודת הפסיכולוג/ית: מסקירת ספרות,
+            ניתוח נתונים ומדידה במחקר, ועד אבחון, כלים טיפוליים, סימולציות להכשרה והערכת כלים קליניים.
+          </p>
+          <p>
+            הוא משלב שלוש מסגרות חשיבה ייעודיות — המודל <strong>״לחשוב עם מכונה״</strong>,
+            מודל <strong>SMART</strong> לשילוב מדורג של AI בטיפול, ומודל <strong>CARE</strong> לגבולות
+            היכולת הרגשית של AI — לצד עבודת ידיים בבניית כלים ודיון מתמשך בהיבטים אתיים,
+            פסיכולוגיים ורגולטוריים.
+          </p>
+          <p>
+            <strong>בכל מפגש יש התנסות מעשית.</strong> זהו קורס חוויתי־יישומי, ולא קורס עיוני על טכנולוגיה.
+          </p>
+        </div>
+
+        <div style="margin-block-start:2.5rem;">
+          <p class="eyebrow" style="margin-block-end:1.1rem;">מפת הקורס — 13 מפגשים</p>
+          <div class="map">
+            <div class="map-group g-a">
+              <span class="map-label">חלק א׳ · 1–4</span>
+              <div class="map-ticks">
+                <a class="tick" href="#s01">01</a><a class="tick" href="#s02">02</a><a class="tick" href="#s03">03</a><a class="tick" href="#s04">04</a>
+              </div>
+              <span class="map-name">יסודות ותשתית חשיבה</span>
+            </div>
+            <div class="map-group g-b">
+              <span class="map-label">חלק ב׳ · 5–8</span>
+              <div class="map-ticks">
+                <a class="tick" href="#s05">05</a><a class="tick" href="#s06">06</a><a class="tick" href="#s07">07</a><a class="tick" href="#s08">08</a>
+              </div>
+              <span class="map-name">AI במחקר פסיכולוגי</span>
+            </div>
+            <div class="map-group g-c">
+              <span class="map-label">חלק ג׳ · 9–12</span>
+              <div class="map-ticks">
+                <a class="tick" href="#s09">09</a><a class="tick" href="#s10">10</a><a class="tick" href="#s11">11</a><a class="tick" href="#s12">12</a>
+              </div>
+              <span class="map-name">AI בקליניקה</span>
+            </div>
+            <div class="map-group g-d is-finale">
+              <span class="map-label">סיכום</span>
+              <div class="map-ticks">
+                <a class="tick" href="#s13">13</a>
+              </div>
+              <span class="map-name">פרויקטים מסכמים</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OUTCOMES ==================== -->
+    <section class="sec" id="outcomes">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">02 — תוצרי למידה</p>
+          <h2>מה תדעו לעשות בסוף הקורס</h2>
+        </div>
+        <div class="outcomes">
+          <div class="outcome">
+            <h3><i>A</i> ידע</h3>
+            <ul>
+              <li>לתאר את עקרונות הפעולה של מודלי שפה גדולים ובינה יוצרת ואת מגבלותיהם — הזיות, הטיות, ״תאריך גג״.</li>
+              <li>להסביר את השימושים המרכזיים של AI במחקר הפסיכולוגי ובעבודה הקלינית, ואת ההבדל ביניהם.</li>
+              <li>להגדיר את רמות מודל SMART ואת מרכיבי מודל CARE.</li>
+            </ul>
+          </div>
+          <div class="outcome">
+            <h3><i>B</i> מיומנויות</h3>
+            <ul>
+              <li>לנתח באופן ביקורתי טענות על יכולות AI ולהעריך את תקפותן מול ראיות.</li>
+              <li>לתכנן ולבנות כלי AI — פרומפט או סימולציה — למענה לצורך מחקרי או קליני, לפי עקרון קונטקסט–מגבלות–יעד.</li>
+              <li>להעריך כלי AI קיים מול צורך פסיכולוגי מוגדר, כולל מדדי הצלחה, גבולות וסיכונים.</li>
+            </ul>
+          </div>
+          <div class="outcome">
+            <h3><i>C</i> תפיסות וערכים</h3>
+            <ul>
+              <li>לגבש עמדה מושכלת ואחראית כלפי שילוב AI בפסיכולוגיה.</li>
+              <li>להפנים את מרכזיות הסודיות, האוטונומיה ורווחת המטופל/הנחקר בעידן ה־AI.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FRAMEWORKS ==================== -->
+    <section class="sec" id="frameworks">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">03 — מסגרות עבודה</p>
+          <h2>שלוש המסגרות שמלוות את הקורס</h2>
+          <p>המסגרות חוזרות לאורך כל המפגשים ומשמשות כשפה משותפת בכיתה ובמטלות. לכל אחת עמוד ייעודי באתר המלווה.</p>
+        </div>
+
+        <div class="frames">
+
+          <div class="frame">
+            <div class="frame-top">
+              <h3>לחשוב עם מכונה</h3>
+              <span class="frame-tag">עמוד השדרה</span>
+            </div>
+            <p class="frame-note">
+              המודל שמארגן את העבודה מול המכונה לאורך הקורס. בליבו עקרון־העל שחוזר בכל מפגש
+              ובכל מטלה — שלושה מרכיבים שכל פנייה למודל צריכה להכיל:
+            </p>
+            <div class="triad">
+              <em>קונטקסט</em><em>מגבלות</em><em>יעד</em>
+            </div>
+            <p class="frame-note">
+              לצידו: עשרת עקרונות הנדסת הפרומפטים ומסגרת קבלת ההחלטות בת ששת השלבים.
+            </p>
+            <div class="chips">
+              <a class="chip" href="https://thinking-with-machine.base44.app/ThinkingWithMachine" target="_blank" rel="noopener">המודל</a>
+              <a class="chip" href="https://thinking-with-machine.base44.app/Principles" target="_blank" rel="noopener">עשרת העקרונות</a>
+              <a class="chip" href="https://thinking-with-machine.base44.app/Decision" target="_blank" rel="noopener">מסגרת ההחלטות</a>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-top">
+              <h3>מודל SMART</h3>
+              <span class="frame-tag">חמש רמות</span>
+            </div>
+            <p class="frame-note">
+              שילוב מדורג ואחראי של AI בטיפול — מהרמה התומכת ועד הרמה המשנה, עם שיקולים אתיים בכל רמה.
+              ככל שעולים בסולם, גדל מה שמואצל למכונה — וגדלה האחריות שנדרשת מהמטפל/ת.
+            </p>
+            <div class="ladder">
+              <div class="rung r1"><b>S</b><span>Supporting</span></div>
+              <div class="rung r2"><b>M</b><span>Mentoring</span></div>
+              <div class="rung r3"><b>A</b><span>Assisting</span></div>
+              <div class="rung r4"><b>R</b><span>Reflecting</span></div>
+              <div class="rung r5"><b>T</b><span>Transforming</span></div>
+            </div>
+            <div class="chips">
+              <a class="chip" href="https://thinking-with-machine.base44.app/SmartModel" target="_blank" rel="noopener">עמוד המודל</a>
+            </div>
+          </div>
+
+          <div class="frame">
+            <div class="frame-top">
+              <h3>מודל CARE</h3>
+              <span class="frame-tag">ארבעה מרכיבים</span>
+            </div>
+            <p class="frame-note">
+              מה AI יכול ולא יכול — רגשית. המודל מפרק את היכולת הרגשית לארבעה מרכיבים, ומאפשר לומר
+              במדויק היכן המכונה מגיעה לקצה: ברית טיפולית, אנתרופומורפיזם ונטיית ה־AI ״לרצות״.
+            </p>
+            <div class="quartet">
+              <div class="quad"><b>C</b><span>Capturing</span></div>
+              <div class="quad"><b>A</b><span>Arranging</span></div>
+              <div class="quad"><b>R</b><span>Resonating</span></div>
+              <div class="quad"><b>E</b><span>Embodied</span></div>
+            </div>
+            <div class="chips">
+              <a class="chip" href="https://thinking-with-machine.base44.app/CareModel" target="_blank" rel="noopener">עמוד המודל</a>
+              <a class="chip is-paper" href="https://doi.org/10.1177/15248380261425937" target="_blank" rel="noopener">המאמר</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SCHEDULE ==================== -->
+    <section class="sec" id="schedule">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">04 — מהלך השיעורים</p>
+          <h2>13 מפגשים</h2>
+          <p>בכל מפגש: נושא הלימוד ולצידו התנסות מעשית. החומרים המקושרים בכל מפגש הם לקריאה או להתנסות לפניו.</p>
+        </div>
+
+        <!-- ---------- PART A ---------- -->
+        <div class="part p-a">
+          <div class="part-head">
+            <h3>חלק א׳ — יסודות ותשתית חשיבה</h3>
+            <span class="range">מפגשים 1–4</span>
+          </div>
+
+          <article class="session" id="s01">
+            <div class="s-num">01</div>
+            <div class="s-body">
+              <h4 class="s-title">מבוא: AI בפסיכולוגיה — מפת השדה</h4>
+              <p class="s-desc">הצורך; בין מחקר לקליניקה; אוריינות AI. המודל ״לחשוב עם מכונה״ (Thinking with a Machine) כעמוד שדרה לכל הקורס.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>דיון פתיחה ומיפוי שימושים</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/ThinkingWithMachine" target="_blank" rel="noopener">לחשוב עם מכונה</a>
+                <a class="chip" href="https://thinking-with-machine.base44.app/PracticalUses" target="_blank" rel="noopener">שימושים מעשיים</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s02">
+            <div class="s-num">02</div>
+            <div class="s-body">
+              <h4 class="s-title">איך זה עובד: מודלי שפה גדולים ובינה יוצרת</h4>
+              <p class="s-desc">מודלי שפה גדולים (LLMs), בינה יוצרת, מודלים חושבים, חלון הקשר, RAG, מולטי־מודאליות, סוכנים; הזיות והטיות.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>תרגיל ״בדיקת מהימנות״ — לשבור את המכונה בתחום מומחיות אישי</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/Glossary" target="_blank" rel="noopener">מונחון</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s03">
+            <div class="s-num">03</div>
+            <div class="s-body">
+              <h4 class="s-title">הנדסת פרומפטים והנדסת הקשר</h4>
+              <p class="s-desc">עשרת העקרונות, ועקרון־העל שמלווה את כל הקורס: קונטקסט · מגבלות · יעד.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>תרגול שיפור איטרטיבי של פרומפט</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/Principles" target="_blank" rel="noopener">עשרת העקרונות</a>
+                <a class="chip" href="https://thinking-with-machine.base44.app/Workshop" target="_blank" rel="noopener">סדנת תרגול</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s04">
+            <div class="s-num">04</div>
+            <div class="s-body">
+              <p class="flagline">אתיקה ובטיחות</p>
+              <h4 class="s-title">אתיקה, פרטיות וסיכונים</h4>
+              <p class="s-desc">סודיות, הטיה, הסתמכות־יתר, רגולציה; AI כ״ספק בריאות נפש דה־פקטו״. מסגרת קבלת ההחלטות בת ששת השלבים.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>תרגיל ״סיעור מוחות אתי״ + ניתוח מקרה</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/Decision" target="_blank" rel="noopener">מסגרת ההחלטות</a>
+                <a class="chip is-paper" href="https://doi.org/10.3389/fdgth.2026.1708806" target="_blank" rel="noopener">Refoua et al. 2026</a>
+                <a class="chip" href="https://unesdoc.unesco.org/ark:/48223/pf0000386693_eng" target="_blank" rel="noopener">UNESCO 2023</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- PART B ---------- -->
+        <div class="part p-b">
+          <div class="part-head">
+            <h3>חלק ב׳ — בינה מלאכותית במחקר פסיכולוגי</h3>
+            <span class="range">מפגשים 5–8</span>
+          </div>
+
+          <article class="session" id="s05">
+            <div class="s-num">05</div>
+            <div class="s-body">
+              <h4 class="s-title">סקירת ספרות וגיבוש שאלות מחקר</h4>
+              <p class="s-desc">כלים ייעודיים — <span dir="ltr">Elicit, Connected Papers, Undermind, Research Rabbit, NotebookLM</span> — ומחקר עומק (Deep Research).</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>סקירה זריזה לשאלת מחקר + הצלבת מקורות</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/ResearchProcess" target="_blank" rel="noopener">תהליך המחקר</a>
+                <a class="chip" href="https://thinking-with-machine.base44.app/Tools" target="_blank" rel="noopener">ארגז הכלים</a>
+                <a class="chip is-video" href="https://www.youtube.com/watch?v=8hIzZZTf9Iw" target="_blank" rel="noopener">הרצאה: AI בעולם המחקר</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s06">
+            <div class="s-num">06</div>
+            <div class="s-body">
+              <h4 class="s-title">ניתוח נתונים, קוד וכתיבה אקדמית בעזרת AI</h4>
+              <p class="s-desc">שקיפות וציטוט שימוש; ״<span dir="ltr">Vibe coding</span>״ ו־<span dir="ltr">Claude Code</span> לבניית כלי מחקר ושאלונים.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>תרגיל ״ניתוח מאמר״ — זיקוק 3 תובנות ויישומן</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/PracticalUses" target="_blank" rel="noopener">שימושים מעשיים</a>
+                <a class="chip" href="https://elad-refoua.github.io/qualtrics-backup/" target="_blank" rel="noopener">גיבוי קוולטריקס</a>
+                <a class="chip" href="https://github.com/elad-refoua" target="_blank" rel="noopener">מאגר קוד פתוח</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s07">
+            <div class="s-num">07</div>
+            <div class="s-body">
+              <h4 class="s-title">AI ככלי מדידה והערכה</h4>
+              <p class="s-desc">זיהוי רגשות (מולטי־מודלי), ניתוח שיח וטקסט, סימולציית משתתפים.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>ניתוח גירוי רגשי בעזרת מודל מולטי־מודלי</dd></dl>
+              <div class="chips">
+                <a class="chip is-paper" href="https://doi.org/10.2196/54369" target="_blank" rel="noopener">Elyoseph et al. 2024</a>
+                <a class="chip" href="https://osf.io/3esd7/" target="_blank" rel="noopener">Humantrics (OSF)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s08">
+            <div class="s-num">08</div>
+            <div class="s-body">
+              <h4 class="s-title">הערכה ביקורתית של יכולות AI</h4>
+              <p class="s-desc">מתודולוגיה, <span dir="ltr">benchmarks</span>, מה מודל ״באמת״ יודע; מסגרת מבוססת־צרכים.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>סדנה: עיצוב מבחן ליכולת מודל + תרגיל ״בחינת גבולות״</dd></dl>
+              <div class="chips">
+                <a class="chip is-paper" href="https://doi.org/10.2196/54369" target="_blank" rel="noopener">מחקר הערכה לדוגמה</a>
+                <a class="chip" href="https://thinking-with-machine.base44.app/Decision" target="_blank" rel="noopener">מסגרת מבוססת־צרכים</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- PART C ---------- -->
+        <div class="part p-c">
+          <div class="part-head">
+            <h3>חלק ג׳ — בינה מלאכותית בקליניקה</h3>
+            <span class="range">מפגשים 9–12</span>
+          </div>
+
+          <article class="session" id="s09">
+            <div class="s-num">09</div>
+            <div class="s-body">
+              <h4 class="s-title">שילוב מדורג ואחראי של AI בטיפול — מודל SMART</h4>
+              <p class="s-desc">חמש הרמות — <span dir="ltr">Supporting / Mentoring / Assisting / Reflecting / Transforming</span> — ושיקולים אתיים בכל רמה.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>מיפוי כלי לרמה ב־SMART; דיון ״מה מותר להאציל״</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/SmartModel" target="_blank" rel="noopener">מודל SMART</a>
+                <a class="chip is-video" href="https://www.youtube.com/watch?v=an3qHDVjDRM" target="_blank" rel="noopener">הרצאה: AI בעולם הטיפול</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s10">
+            <div class="s-num">10</div>
+            <div class="s-body">
+              <p class="flagline">אתיקה ובטיחות</p>
+              <h4 class="s-title">מה AI יכול ולא יכול — רגשית. מודל CARE</h4>
+              <p class="s-desc"><span dir="ltr">Capturing / Arranging / Resonating / Embodied</span>; ברית טיפולית, אנתרופומורפיזם, ״חנופה״ (<span dir="ltr">sycophancy</span>).</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>תרגיל ״בדיקת ריצוי״ — לזהות את נטיית ה־AI ״לרצות״</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/CareModel" target="_blank" rel="noopener">מודל CARE</a>
+                <a class="chip is-paper" href="https://doi.org/10.1177/15248380261425937" target="_blank" rel="noopener">Hadar-Shoval et al. 2026</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s11">
+            <div class="s-num">11</div>
+            <div class="s-body">
+              <h4 class="s-title">סימולציות מבוססות AI להכשרת מטפלים</h4>
+              <p class="s-desc">שיטת CPE (<span dir="ltr">Clinical Prompt Engineering</span>): דמות בת שלוש שכבות, קונטקסט/מגבלות/יעד, משוב כפול.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>סדנת בנייה: סימולציית מטופל מדומה + <span dir="ltr">Simulation Audit</span></dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://thinking-with-machine.base44.app/Workshop" target="_blank" rel="noopener">סדנה</a>
+                <a class="chip" href="https://mentiverse.ai" target="_blank" rel="noopener">MENTI — סימולציות הכשרה</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="session" id="s12">
+            <div class="s-num">12</div>
+            <div class="s-body">
+              <p class="flagline">אתיקה ובטיחות</p>
+              <h4 class="s-title">בטיחות, גבולות וכשלים</h4>
+              <p class="s-desc">פרוטוקולי בטיחות, סוכני LLM במצבי משבר, הגנת מטופלים.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>ניתוח כשל בטיחותי + הצעת ״מעקה״</dd></dl>
+              <div class="chips">
+                <a class="chip is-paper" href="https://doi.org/10.3389/fdgth.2026.1708806" target="_blank" rel="noopener">Refoua et al. 2026</a>
+                <a class="chip" href="https://thinking-with-machine.base44.app/Decision" target="_blank" rel="noopener">מסגרת קבלת ההחלטות</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ---------- PART D ---------- -->
+        <div class="part p-d">
+          <div class="part-head">
+            <h3>סיכום</h3>
+            <span class="range">מפגש 13</span>
+          </div>
+
+          <article class="session" id="s13">
+            <div class="s-num">13</div>
+            <div class="s-body">
+              <h4 class="s-title">הצגת פרויקטים מסכמים</h4>
+              <p class="s-desc">כלי AI למענה לצורך מחקרי או קליני — הדגמה חיה, נספח אתי ומדדי הצלחה. סיכום ומבט קדימה.</p>
+              <dl class="s-do"><dt>התנסות</dt><dd>הצגות עמיתים + משוב מובנה</dd></dl>
+              <div class="chips">
+                <a class="chip" href="https://elad-refoua.github.io/bsf-portal/" target="_blank" rel="noopener">פורטל CATAN — דוגמת תוצר</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="note" style="margin-block-start:1.75rem; font-size:.85rem;">
+          ייתכנו שינויים בסילבוס בהתאם לקצב ההתקדמות ולאפקטיביות הלמידה.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== GRADING ==================== -->
+    <section class="sec" id="grading">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">05 — ציון סופי</p>
+          <h2>הערכה</h2>
+          <p>הקורס מבוסס־תוצרים. אין מבחן מסכם בהיקף 100%.</p>
+        </div>
+
+        <div class="grade-bar" role="img" aria-label="חלוקת הציון: מטלת ביניים 30 אחוז, פרויקט מסכם 70 אחוז">
+          <div class="grade-seg seg-30">30%</div>
+          <div class="grade-seg seg-70">70%</div>
+        </div>
+
+        <div class="tasks">
+          <div class="task">
+            <span class="task-pct">30%</span>
+            <h3>מטלת ביניים — הערכה מעצבת</h3>
+            <p>
+              הדגמה מעשית של כלי או שיטה: שימוש מושכל בכלי AI למשימה מחקרית או קלינית,
+              כולל ניתוח גבולות והיבטים אתיים.
+            </p>
+          </div>
+          <div class="task">
+            <span class="task-pct">70%</span>
+            <h3>פרויקט מסכם צוותי</h3>
+            <p>
+              פיתוח והערכה של כלי או יישום AI למענה לצורך מחקרי או קליני — לפי מסגרת קבלת ההחלטות
+              ושיטת CPE / הנדסת קונטקסט. כולל מדריך שימוש, נספח אתי ומדדי הצלחה. יוצג בכיתה במפגש 13.
+            </p>
+          </div>
+        </div>
+
+        <div class="notes">
+          <p class="note is-flag"><span>הגשת שתי המטלות היא תנאי למעבר הקורס.</span></p>
+          <p class="note"><span>אין משקל בציון לעצם הנוכחות — ראו דרישות הקורס.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REQUIREMENTS ==================== -->
+    <section class="sec" id="requirements">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">06 — דרישות</p>
+          <h2>דרישות הקורס</h2>
+        </div>
+        <div class="reqs">
+          <div class="req">
+            <i>מטלות</i>
+            <p>השלמת <strong>מטלת הביניים</strong> ו<strong>הפרויקט המסכם</strong>.</p>
+          </div>
+          <div class="req">
+            <i>ציוד</i>
+            <p><strong>מחשב נייד — חובה בכל מפגש.</strong> הקורס כולל התנסות מעשית בכלים.</p>
+          </div>
+          <div class="req">
+            <i>נוכחות</i>
+            <p>חובת נוכחות ב־<strong>80% מהמפגשים</strong> לפחות. זוהי דרישת קורס ואינה רכיב בציון.</p>
+          </div>
+          <div class="req">
+            <i>שימוש ב־AI במטלות</i>
+            <p>
+              שימוש בכלי AI יוצר לחיפוש, ניסוח ויצירת דוגמאות <strong>מותר ומומלץ</strong> — בכפוף לציון השימוש,
+              אי־הזנת מידע מזהה, והצלבת מידע. <strong>כל תוצר יכלול נספח אתי קצר.</strong>
+            </p>
+          </div>
+          <div class="req">
+            <i>דרישות קדם</i>
+            <p>ללא.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BIBLIOGRAPHY ==================== -->
+    <section class="sec" id="bibliography">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">07 — ביבליוגרפיה</p>
+          <h2>תכני חובה</h2>
+          <p>כל הפריטים מקושרים למקור. רובם בגישה חופשית ואינם דורשים מנוי ספרייה.</p>
+        </div>
+
+        <ol class="refs">
+
+          <li class="ref">
+            <div class="ref-n">01</div>
+            <div>
+              <p class="ref-cite ltr">
+                Refoua, E., Gigi, K., Levkovich, I., Hadar-Shoval, D., Elyoseph, Z., Tsafrir, I., Pen, O., Angert, T., &amp; Haber, Y. (2026).
+                <a href="https://doi.org/10.3389/fdgth.2026.1708806" target="_blank" rel="noopener">Generative AI as a de facto mental health provider: A policy brief and urgent call for regulation</a>.
+                <i>Frontiers in Digital Health, 8</i>, 1708806.
+              </p>
+              <div class="ref-foot">
+                <span class="oa">גישה חופשית</span>
+                <a class="doi" href="https://doi.org/10.3389/fdgth.2026.1708806" target="_blank" rel="noopener">10.3389/fdgth.2026.1708806</a>
+                <a class="doi" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13226558/" target="_blank" rel="noopener">PMC</a>
+                <span class="ref-use">מפגשים 4 · 12</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="ref">
+            <div class="ref-n">02</div>
+            <div>
+              <p class="ref-cite ltr">
+                Hadar-Shoval, D., Haber, Y., Refoua, E., Elyoseph, Z., Yirmiya, K., &amp; Yinon, D. (2026).
+                <a href="https://doi.org/10.1177/15248380261425937" target="_blank" rel="noopener">Algorithmic witnessing: A narrative review and the AI CARE framework for trauma testimony</a>.
+                <i>Trauma, Violence &amp; Abuse</i>.
+              </p>
+              <div class="ref-foot">
+                <span class="oa">גישה חופשית · CC BY-NC</span>
+                <a class="doi" href="https://doi.org/10.1177/15248380261425937" target="_blank" rel="noopener">10.1177/15248380261425937</a>
+                <span class="ref-use">מפגש 10</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="ref">
+            <div class="ref-n">03</div>
+            <div>
+              <p class="ref-cite ltr">
+                Elyoseph, Z., Refoua, E., Asraf, K., Lvovsky, M., Shimoni, Y., &amp; Hadar-Shoval, D. (2024).
+                <a href="https://doi.org/10.2196/54369" target="_blank" rel="noopener">Capacity of generative AI to interpret human emotions from visual and textual data: Pilot evaluation study</a>.
+                <i>JMIR Mental Health, 11</i>, e54369.
+              </p>
+              <div class="ref-foot">
+                <span class="oa">גישה חופשית</span>
+                <a class="doi" href="https://doi.org/10.2196/54369" target="_blank" rel="noopener">10.2196/54369</a>
+                <span class="ref-use">מפגשים 7 · 8</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="ref">
+            <div class="ref-n">04</div>
+            <div>
+              <p class="ref-cite ltr">
+                Haber, Y., Refoua, E., et al.
+                <a href="https://thinking-with-machine.base44.app/SmartModel" target="_blank" rel="noopener">The SMART framework for integrating generative AI in psychotherapy</a>.
+                <i>חומר הקורס.</i>
+              </p>
+              <div class="ref-foot">
+                <span class="oa is-pending">ציטוט סופי להשלמה</span>
+                <span class="ref-use">מפגש 9</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="ref">
+            <div class="ref-n">05</div>
+            <div>
+              <p class="ref-cite ltr">
+                Miao, F., &amp; Holmes, W. — UNESCO (2023).
+                <a href="https://unesdoc.unesco.org/ark:/48223/pf0000386693_eng" target="_blank" rel="noopener">Guidance for generative AI in education and research</a>.
+                UNESCO.
+              </p>
+              <div class="ref-foot">
+                <span class="oa">גישה חופשית</span>
+                <a class="doi" href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research" target="_blank" rel="noopener">עמוד המסמך באתר UNESCO</a>
+                <span class="ref-use">מפגש 4</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="ref">
+            <div class="ref-n">06</div>
+            <div>
+              <p class="ref-cite">
+                מקור מבואי על אופן הפעולה והמגבלות של מודלי שפה גדולים.
+                עד להשלמת הפריט, המונחון של
+                <a href="https://thinking-with-machine.base44.app/Glossary" target="_blank" rel="noopener">״לחשוב עם מכונה״</a>
+                משמש כחומר הרקע למפגש 2.
+              </p>
+              <div class="ref-foot">
+                <span class="oa is-pending">להשלמה</span>
+                <span class="ref-use">מפגש 2</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== RESOURCES ==================== -->
+    <section class="sec" id="resources">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow">08 — תכני העשרה</p>
+          <h2>משאבים מלווים</h2>
+          <p>האתר ״לחשוב עם מכונה״ מלווה את הקורס לאורך כל הסמסטר. מאמרים עדכניים יתווספו במהלכו.</p>
+        </div>
+
+        <div class="res-grid">
+
+          <div class="res">
+            <h3><small>אתר מלווה</small>לחשוב עם מכונה</h3>
+            <ul>
+              <li data-url="https://thinking-with-machine.base44.app/"><a href="https://thinking-with-machine.base44.app/" target="_blank" rel="noopener">עמוד הבית<small>מפגש 1</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/ThinkingWithMachine"><a href="https://thinking-with-machine.base44.app/ThinkingWithMachine" target="_blank" rel="noopener">המודל<small>מפגש 1</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/Glossary"><a href="https://thinking-with-machine.base44.app/Glossary" target="_blank" rel="noopener">מונחון<small>מפגש 2</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/Principles"><a href="https://thinking-with-machine.base44.app/Principles" target="_blank" rel="noopener">עשרת העקרונות<small>מפגש 3</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/Decision"><a href="https://thinking-with-machine.base44.app/Decision" target="_blank" rel="noopener">מסגרת קבלת ההחלטות<small>מפגשים 4 · 8 · 12</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/ResearchProcess"><a href="https://thinking-with-machine.base44.app/ResearchProcess" target="_blank" rel="noopener">תהליך המחקר<small>מפגש 5</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/Tools"><a href="https://thinking-with-machine.base44.app/Tools" target="_blank" rel="noopener">ארגז הכלים<small>מפגש 5</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/PracticalUses"><a href="https://thinking-with-machine.base44.app/PracticalUses" target="_blank" rel="noopener">שימושים מעשיים<small>מפגשים 1 · 6</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/SmartModel"><a href="https://thinking-with-machine.base44.app/SmartModel" target="_blank" rel="noopener">מודל SMART<small>מפגש 9</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/CareModel"><a href="https://thinking-with-machine.base44.app/CareModel" target="_blank" rel="noopener">מודל CARE<small>מפגש 10</small></a></li>
+              <li data-url="https://thinking-with-machine.base44.app/Workshop"><a href="https://thinking-with-machine.base44.app/Workshop" target="_blank" rel="noopener">סדנה<small>מפגשים 3 · 11</small></a></li>
+            </ul>
+          </div>
+
+          <div class="res">
+            <h3><small>הרצאות מוקלטות</small>לצפייה מקדימה</h3>
+            <ul>
+              <li data-url="https://www.youtube.com/watch?v=8hIzZZTf9Iw"><a href="https://www.youtube.com/watch?v=8hIzZZTf9Iw" target="_blank" rel="noopener">בינה מלאכותית בעולם המחקר<small>מפגש 5</small></a></li>
+              <li data-url="https://www.youtube.com/watch?v=an3qHDVjDRM"><a href="https://www.youtube.com/watch?v=an3qHDVjDRM" target="_blank" rel="noopener">בינה מלאכותית בעולם הטיפול<small>מפגש 9</small></a></li>
+            </ul>
+
+            <h3 style="margin-block-start:1.75rem;"><small>פרופילים אקדמיים</small>מעקב אחר פרסומים</h3>
+            <ul>
+              <li data-url="https://scholar.google.com/citations?user=uHWnnW8AAAAJ&amp;hl=en"><a href="https://scholar.google.com/citations?user=uHWnnW8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar<small>עדכוני מאמרים</small></a></li>
+              <li data-url="https://orcid.org/0000-0003-1471-3573"><a href="https://orcid.org/0000-0003-1471-3573" target="_blank" rel="noopener">ORCID<small>0000-0003-1471-3573</small></a></li>
+            </ul>
+          </div>
+
+          <div class="res">
+            <h3><small>כלים פתוחים</small>להתנסות ולפרויקט</h3>
+            <ul>
+              <li data-url="https://mentiverse.ai"><a href="https://mentiverse.ai" target="_blank" rel="noopener">MENTI<small>סימולציות הכשרה</small></a></li>
+              <li data-url="https://osf.io/3esd7/"><a href="https://osf.io/3esd7/" target="_blank" rel="noopener">Humantrics<small>דגימת חוויה · EMA</small></a></li>
+              <li data-url="https://elad-refoua.github.io/qualtrics-backup/"><a href="https://elad-refoua.github.io/qualtrics-backup/" target="_blank" rel="noopener">גיבוי קוולטריקס<small>כלי מחקר</small></a></li>
+              <li data-url="https://elad-refoua.github.io/bsf-portal/"><a href="https://elad-refoua.github.io/bsf-portal/" target="_blank" rel="noopener">פורטל CATAN<small>דוגמת תוצר</small></a></li>
+              <li data-url="https://github.com/elad-refoua"><a href="https://github.com/elad-refoua" target="_blank" rel="noopener">מאגר קוד פתוח<small>GitHub</small></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p>
+        סילבוס — תוכנית הוראה לקורס. ייתכנו שינויים בהתאם לקצב ההתקדמות ולאפקטיביות הלמידה.
+        פריטי ביבליוגרפיה המסומנים ״להשלמה״ יעודכנו לפני תחילת הסמסטר.
+      </p>
+      <p class="sig">אלעד רפואה · סמסטר ב׳ תשפ״ז</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var printBtn = document.getElementById("printBtn");
+  if (printBtn) {
+    printBtn.addEventListener("click", function () { window.print(); });
+  }
+
+  // Smooth scroll for in-page links, honoring reduced motion.
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var target = document.querySelector(a.getAttribute("href"));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+      history.replaceState(null, "", a.getAttribute("href"));
+    });
+  });
+
+  // Scroll-spy: highlight the nav link for the section currently in view.
+  var links = Array.prototype.slice.call(document.querySelectorAll("#jump a"));
+  var byId = {};
+  var sections = [];
+  links.forEach(function (a) {
+    var id = a.getAttribute("href").slice(1);
+    var sec = document.getElementById(id);
+    if (sec) { byId[id] = a; sections.push(sec); }
+  });
+
+  if ("IntersectionObserver" in window && sections.length) {
+    var visible = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        visible[entry.target.id] = entry.isIntersecting ? entry.intersectionRatio : 0;
+      });
+      var bestId = null, best = 0;
+      sections.forEach(function (s) {
+        var v = visible[s.id] || 0;
+        if (v > best) { best = v; bestId = s.id; }
+      });
+      links.forEach(function (a) { a.classList.remove("is-active"); });
+      if (bestId && byId[bestId]) { byId[bestId].classList.add("is-active"); }
+    }, { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.15, 0.4, 0.75, 1] });
+
+    sections.forEach(function (s) { io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
