@@ -170,12 +170,14 @@ These are consequences of the line above, not preferences.
    slot is not, because a reader who printed the page will not see it and will not know to look.
    Anything that changes what a student must DO is Elad's call and needs telling them, not just
    editing.
-3. **Whether they hold the LIVE PAGE or a FROZEN PDF decides everything about point 2.** The page
-   has its own print stylesheet that produces a formal syllabus document, so both are plausible. If
-   they were sent the link, every correction reaches them automatically and today's bibliography
-   completion already has. If they were sent a PDF, they hold a snapshot - and the snapshot may
-   still contain the `להשלמה` placeholder that was only filled at ~15:00 today. **This is recorded
-   as an open question to Elad rather than assumed either way.**
+3. **ANSWERED 2026-09-15 - they hold the LINK.** Elad: *"קישור שלחתי אל תדאג"*. So today's
+   bibliography completion reached them the moment it was pushed; nobody is holding a snapshot with
+   the `להשלמה` placeholder, and no re-distribution is owed. **Do not re-raise this.**
+   But it cuts the other way too, and that is the part worth keeping: **because they hold a link,
+   anything edited here changes what students see, silently and immediately.** There is no
+   publication step left to act as a checkpoint. That makes rule 2 stricter rather than looser - a
+   change to a reading, a date, or an assignment is a change to a live document a cohort is working
+   from, and it needs Elad's word and theirs, not just a commit.
 4. **Session 2's reading changed today.** Item 07 stopped being a placeholder and became Shanahan
    (2024); four Torous papers were added as 08-11. Anyone reconciling a student's copy against the
    live page should expect exactly that difference and no other.
